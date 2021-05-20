@@ -1,38 +1,59 @@
 import * as React from "react";
+{/* Add imports from README Next steps here */}
+
+
+/*
+The About function defines the component that makes up the About page
+- This component is attached to the /about path in router.jsx
+*/
 
 export default function About() {
+  {/* Declare style and trigger for wiggle effect from README here */}
+  
   return (
     <div className="page">
-      <h1 className="title">About this site</h1>
+      {/* Extend h1 tag from README here */}
+      <h1 className="title">
+        About this site
+      </h1>
+      {/* Extend p tag from README here */}
       <p>
         Welcome to the Glitch React starter, where you can instantly create a
         React site that's fully customizable.
       </p>
       <p>
+        <em>
+          If you're completely new to React, learning the{" "}
+          <a href="https://reactjs.org/docs/hello-world.html">main concepts</a>{" "}
+          will get you off to a great start. You'll also see comments and links
+          to supporting resources throughout the code.
+        </em>
+      </p>
+      <p>
         This page is a great spot to tell the world a few details about the new
-        React app you built on Glitch! The content is defined in the router.
-        Check out your project's <code>readme</code> file to learn more about
-        how to customize your contnet.
+        React app you built on Glitch! Check out your project's{" "}
+        <code>readme</code> file to learn more about how to customize your
+        content.
       </p>
       <ul>
         <li>
           🎉 Right now, your site is <strong>live on the web</strong> 🌐 with a
           real URL (a secure HTTPS address!) that updates as soon as you make
-          changes to your site or app.
+          changes.
         </li>
         <li>
           💥 <strong>Add a domain</strong> to your new Glitch project! Just go
-          to the <strong>Tools</strong> menu in the Glitch editor, and click on
-          "Custom Domains"
+          to the <strong>Tools</strong> menu in the Glitch editor, and click{" "}
+          <strong>Custom Domains</strong>.
         </li>
         <li>
           🌈 Use the <strong>Share</strong> button in the Glitch editor to
           invite others in to edit your new React project by typing in their
-          email address or Glitch username. <br />( <strong>Tip:</strong> 👀Make
+          email address or Glitch username. <br /> <strong>Tip:</strong> 👀Make
           your code, or even your entire app, private to just those you invite,
-          just by{" "}
+          by{" "}
           <a href="https://glitch.com/pricing">upgrading your Glitch account</a>
-          .)
+          .
         </li>
       </ul>
 
