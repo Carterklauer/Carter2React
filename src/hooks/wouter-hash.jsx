@@ -1,9 +1,12 @@
 import { useState, useEffect, useCallback } from "react";
 import { Router, Route } from "wouter";
 
-// returns the current hash location in a normalized form
-// (excluding the leading '#' symbol)
-// returns the current hash location (excluding the '#' symbol)
+/*
+We use hash based location https://github.com/molefrog/wouter#customizing-the-location-hook
+- The router in app.jsx uses this hook
+*/
+
+// Return the current hash location (excluding the '#' symbol)
 const currentLoc = () => window.location.hash.replace("#", "") || "/";
 
 const useHashLocation = () => {
@@ -12,7 +15,7 @@ const useHashLocation = () => {
   useEffect(() => {
     const handler = () => setLoc(currentLoc());
 
-    // subscribe on hash changes
+    // Subscribe on hash changes
     window.addEventListener("hashchange", handler);
     return () => window.removeEventListener("hashchange", handler);
   }, []);
