@@ -2,9 +2,9 @@ import * as React from "react";
 {/* Add imports from README Next steps here */}
 
 
-/*
-The About function defines the component that makes up the About page
-- This component is attached to the /about path in router.jsx
+/**
+* The About function defines the component that makes up the About page
+* This component is attached to the /about path in router.jsx
 */
 
 export default function About() {

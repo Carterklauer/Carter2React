@@ -6,6 +6,10 @@ This project contains a foundation for building and learning about React apps. T
 
 _While you're in the editor working, Glitch is running your `start` script in the background (`vite dev`). The site will be in dev mode and you'll see your changes happen ✨ immediately in the preview window. Once you close the editor window and your app goes to sleep, Glitch runs the `build` script and Vite builds your app for modern browsers._
 
+## Prerequisites
+
+You'll get best use out of this project if you're familiar with basic JavaScript. This project is a static site, which means that the server builds the site from the content of the `src` folder while you're developing it, then it's able to serve the pages super quickly when the user requests them.
+
 ## What's in this project?
 
 ← `README.md`: That’s this file, where you can tell people what your cool website does and how you built it.
@@ -79,6 +83,8 @@ Let's make the effect happen when the user hovers over the first paragraph eleme
 ```
 
 Hover over the paragraph to see the effect on the About page header!
+
+___Want a basic template version of this project to build your own React app? Check out [Minimal React](https://glitch.com/edit/#!/remix/glitch-mvp-react)!___
 
 ![Glitch](https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2FLogo_Color.svg?v=1602781328576)
 
