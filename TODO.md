@@ -32,3 +32,7 @@ Let's make the effect happen when the user hovers over the first paragraph eleme
 ```
 
 Hover over the paragraph to see the effect on the About page header!
+
+## Keep going! 🚀
+
+Try experimenting with the `useWiggle` properties for different effects!
