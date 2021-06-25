@@ -50,39 +50,9 @@ React defines site components in [JSX](https://reactjs.org/docs/introducing-jsx.
 
 ← `src/pages/home.jsx` The content of the Home page, also defined as a component function. The page includes the animated effect on hover, and title change effect on click (which is also a handy demo of using state data in React).
 
+## Try this next 🏗️
 
-## Next steps 🚀
-
-Let's add the wiggle function to other elements in the site.
-
-In `pages/about.jsx`, add the imports at the top:
-
-```js
-import { useWiggle } from "../hooks/wiggle";
-import { animated } from "react-spring";
-```
-
-Bring the wiggle style and trigger function in before the `return` statement, this time with slightly different parameters:
-
-```js
-const [style, trigger] = useWiggle({ x: 50, rotation: 1, scale: 1.2 });
-```
-
-Extend the header element to use `animated` and apply the wiggle style:
-
-```js
-<animated.h1 className="title" style={style}>
- About this site
-</animated.h1>
-```
-
-Let's make the effect happen when the user hovers over the first paragraph element by extending its opening tag:
-
-```js
-<p onMouseEnter={trigger}>
-```
-
-Hover over the paragraph to see the effect on the About page header!
+Take a look in `TODO.md` for next steps you can try out in your new site!
 
 ___Want a basic template version of this project to build your own React app? Check out [Minimal React](https://glitch.com/edit/#!/remix/glitch-mvp-react)!___
 
