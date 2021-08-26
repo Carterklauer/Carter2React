@@ -1,0 +1,36 @@
+/*
+ * ServiceWorker to make site function as a PWA (Progressive Web App)
+ *
+ * Based on https://glitch.com/~pwa by https://glitch.com/@PaulKinlan
+ */
+
+// Specify what we want added to the cache for offline use
+self.addEventListener("install", e => {
+  e.waitUntil(
+    // Give the cache a name
+    caches.open("hello-react-pwa").then(cache => {
+      // Add the homepage and stylesheet
+      return cache.addAll([
+        "/"
+      ]);
+    })
+  );
+});
+
+// Network falling back to cache approach - we only cache the home route
+// https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker
+self.addEventListener('fetch', function(event) {
+  event.respondWith(
+    caches.open('hello-react-pwa').then(function(cache) {
+      // Try fetching the page
+      return fetch(event.request).then(function(response) {
+        // In case we don't have this in cache let's add it
+        cache.put(event.request, response.clone());
+        return response;
+      }).catch(err => {
+        // Fetch failed so return cache
+        return caches.match(event.request);
+      });
+    })
+  );
+});

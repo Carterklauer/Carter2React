@@ -1,0 +1,16 @@
+{
+  "name": "Hello React",
+  "short_name": "Hello React",
+  "description": "Get started with a new React project on Glitch",
+  "icons": [
+    {
+      "sizes": "260x260",
+      "type": "image/png",
+      "src": "https://cdn.glitch.com/project-avatar/2f80c958-3bc4-4f47-8e97-6a5c8684ac2c.png?2021-03-26T18:55:07.373Z"
+    }
+  ],
+  "display": "standalone",
+  "background_color": "#FFFFA0",
+  "theme_color": "#2800FF",
+  "start_url": "/"
+}
