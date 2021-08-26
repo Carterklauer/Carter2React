@@ -17,7 +17,7 @@ self.addEventListener("install", e => {
   );
 });
 
-// Network falling back to cache approach - we only cache the home route
+// Network falling back to cache approach - we update the cache each time we fetch
 // https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker
 self.addEventListener('fetch', function(event) {
   event.respondWith(
