@@ -16,9 +16,9 @@ You'll get best use out of this project if you're familiar with basic JavaScript
 
 ← `index.html`: This is the main page template React uses to build your site–it imports `index.jsx` to kick things off. When you're ready to share your site or add a custom domain, change SEO/meta settings in here.
 
-← `manifest.json`: The manifest allows the site to function as a PWA (Progressive Web App), specifying metadata that determines how the app will appear and behave natively when installed on the user device.
+← `public/manifest.json`: The manifest allows the site to function as a PWA (Progressive Web App), specifying metadata that determines how the app will appear and behave natively when installed on the user device.
 
-← `sw.js`: The Service Worker JavaScript sets the app up to cache content for fast delivery as a PWA.
+← `public/sw.js`: The Service Worker JavaScript sets the app up to cache content for fast delivery as a PWA.
 
 ← `src/`: This folder contains all the files React will use to build your site.
 
