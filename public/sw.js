@@ -6,6 +6,7 @@
 
 // Specify what we want added to the cache for offline use
 self.addEventListener("install", e => {
+  self.skipWaiting();
   e.waitUntil(
     // Give the cache a name
     caches.open("hello-react-pwa").then(cache => {
