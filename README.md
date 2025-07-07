@@ -1,5 +1,7 @@
 # Hello React!
 
+> ⚠️🚨 **Glitch project hosting shuts down on 8th July 2025. This repo contains the source code for the Glitch Hello React starter app – this project is no longer maintained by the Glitch team, but you are welcome to grab the code and use it somewhere else!**
+
 This project contains a foundation for building and learning about React apps. The site includes two routes showing how navigation works in a single page app. We manage the page head and body using a standard React flow. The homepage features a click effect that demonstrates using state, and an animation you can try out yourself by following the steps in `TODO.md`. 💫
 
 [React](https://reactjs.org/) is a popular UI library for building web apps. [Vite](https://vitejs.dev/) is a powerful tool for building javascript apps that bundles all of your code and shows immediate changes while you're editing.
